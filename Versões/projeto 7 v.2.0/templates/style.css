@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li.success {
+    color: green;
+    font-weight: bold;
+}
+
+li.warning {
+    color: orange;
+    font-weight: bold;
+}
+
+li.danger {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-success {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-danger {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

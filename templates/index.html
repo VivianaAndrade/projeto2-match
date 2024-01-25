@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Participantes</title>
+</head>
+<body>
+    <h1>Lista de Participantes</h1>
+    <ul>
+        {% for participante in participantes %}
+            <li>{{ participante.nome }}, {{ participante.idade }} anos, {{ participante.endereco }}, {% if participante.reside_em_sp %}Reside em SP{% else %}Não reside em SP{% endif %}</li>
+        {% endfor %}
+    </ul>
+<h2>Cadastrar Participante</h2>
+<form action="/cadastrar" method="post">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="number" id="idade" name="idade" required>
+    <br>
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco" required>
+    <br>
+    <label for="reside_em_sp">Reside em São Paulo?</label>
+    <input type="radio" id="sim" name="reside_em_sp" value="sim" required>
+    <label for="sim">Sim</label>
+    <input type="radio" id="nao" name="reside_em_sp" value="nao" required>
+    <label for="nao">Não</label>
+    <br>
+    <input type="submit" value="Cadastrar">
+</form>
+
+</body>
+</html>
