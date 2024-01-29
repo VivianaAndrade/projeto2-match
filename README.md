@@ -5,6 +5,7 @@ O projeto tem como objetivo criar um sistema de inscrição para eventos com con
 
 ### 1.2 Contexto
 Este projeto faz parte do curso baseado em Python do Programa Match! 
+IBM em parceria com a Mastertech.
 
 ## 2. Fases do Projeto
 
